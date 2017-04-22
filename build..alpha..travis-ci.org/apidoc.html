@@ -1,0 +1,692 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="http://cssnext.io/"
+
+    >cssnext (v1.8.4)</a>
+</h1>
+<h4>Use tomorrow's CSS syntax, today</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.cssnext">module cssnext</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cssnext.cssnext">
+            function <span class="apidocSignatureSpan"></span>cssnext
+            <span class="apidocSignatureSpan">(string, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">cssnext.</span>features</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.cssnext.features">module cssnext.features</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cssnext.features.autoprefixer">
+            function <span class="apidocSignatureSpan">cssnext.features.</span>autoprefixer
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cssnext.features.calc">
+            function <span class="apidocSignatureSpan">cssnext.features.</span>calc
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cssnext.features.colorFunction">
+            function <span class="apidocSignatureSpan">cssnext.features.</span>colorFunction
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cssnext.features.colorGray">
+            function <span class="apidocSignatureSpan">cssnext.features.</span>colorGray
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cssnext.features.colorHexAlpha">
+            function <span class="apidocSignatureSpan">cssnext.features.</span>colorHexAlpha
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cssnext.features.colorHwb">
+            function <span class="apidocSignatureSpan">cssnext.features.</span>colorHwb
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cssnext.features.colorRebeccapurple">
+            function <span class="apidocSignatureSpan">cssnext.features.</span>colorRebeccapurple
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cssnext.features.colorRgba">
+            function <span class="apidocSignatureSpan">cssnext.features.</span>colorRgba
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cssnext.features.customMedia">
+            function <span class="apidocSignatureSpan">cssnext.features.</span>customMedia
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cssnext.features.customProperties">
+            function <span class="apidocSignatureSpan">cssnext.features.</span>customProperties
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cssnext.features.customSelectors">
+            function <span class="apidocSignatureSpan">cssnext.features.</span>customSelectors
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cssnext.features.filter">
+            function <span class="apidocSignatureSpan">cssnext.features.</span>filter
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cssnext.features.fontVariant">
+            function <span class="apidocSignatureSpan">cssnext.features.</span>fontVariant
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cssnext.features.mediaQueriesRange">
+            function <span class="apidocSignatureSpan">cssnext.features.</span>mediaQueriesRange
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cssnext.features.pseudoClassAnyLink">
+            function <span class="apidocSignatureSpan">cssnext.features.</span>pseudoClassAnyLink
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cssnext.features.pseudoClassMatches">
+            function <span class="apidocSignatureSpan">cssnext.features.</span>pseudoClassMatches
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cssnext.features.pseudoClassNot">
+            function <span class="apidocSignatureSpan">cssnext.features.</span>pseudoClassNot
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cssnext.features.pseudoElements">
+            function <span class="apidocSignatureSpan">cssnext.features.</span>pseudoElements
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cssnext.features.rem">
+            function <span class="apidocSignatureSpan">cssnext.features.</span>rem
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.cssnext" id="apidoc.module.cssnext">module cssnext</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.cssnext.cssnext" id="apidoc.element.cssnext.cssnext">
+        function <span class="apidocSignatureSpan"></span>cssnext
+        <span class="apidocSignatureSpan">(string, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function cssnext(string, options) {
+  // prevent usage as a webpack loader
+  // webpack run loader as function with an object as context
+  // this object contains a &#x22;webpack&#x22; key set to true if used as a loader
+  // https://github.com/cssnext/cssnext/issues/61
+  if (typeof this === &#x22;object&#x22; &#x26;&#x26; this.webpack === true) {
+    throw new Error(&#x22;⚠︎ Don&#x27;t use directly cssnext as a webpack loader. &#x22; + &#x22;Please use `cssnext-loader` instead: &#x22; + &#x22;https://github
+.com/cssnext/cssnext-loader&#x22;);
+  }
+
+  if (arguments.length === 0) {
+    options = {};
+  }
+  if (arguments.length === 1 &#x26;&#x26; typeof string === &#x22;object&#x22;) {
+    options = string;
+    string = undefined;
+  } else {
+    options = options || {};
+  }
+
+  options = _extends({
+    features: {},
+    // options.browsers is deliberately undefined by defaut to inherit
+    // browserslist default behavior
+    // default sourcemap
+    // if `map` option is passed, `sourcemap` option is ignored
+    // if `sourcemap` option is passed, a inline map is used
+    map: options.sourcemap ? true : null,
+    messages: true
+  }, options);
+
+  var features = options.features;
+
+  // propagate browsers option to autoprefixer
+  if (features.autoprefixer !== false) {
+    features.autoprefixer = _extends({
+      browsers: features.autoprefixer &#x26;&#x26; features.autoprefixer.browsers ? features.autoprefixer.browsers : options.browsers
+    }, features.autoprefixer || {});
+
+    // autoprefixer doesn&#x27;t like an &#x22;undefined&#x22; value. Related to coffee ?
+    if (features.autoprefixer.browsers === undefined) {
+      delete features.autoprefixer.browsers;
+    }
+  }
+
+  var postcss = (0, _postcss2[&#x22;default&#x22;])();
+
+  // only enable import &#x26; url if fs module is available
+  if (_fs2[&#x22;default&#x22;] &#x26;&#x26; _fs2[&#x22;default&#x22;].readFile) {
+    // @import
+    if (options[&#x22;import&#x22;] !== false) {
+      var plugin = require(&#x22;postcss-import&#x22;)(typeof options[&#x22;import&#x22;] === &#x22;object&#x22; ? _extends({}, options[&#x22;import&#x22;]) : undefined
+);
+      postcss.use(plugin);
+    }
+
+    // url() adjustements
+    if (options.url !== false) {
+      var plugin = require(&#x22;postcss-url&#x22;)(typeof options.url === &#x22;object&#x22; ? _extends({}, options.url) : undefined);
+      postcss.use(plugin);
+    }
+  }
+
+  // tmp fixes
+  Object.keys(_fixes2[&#x22;default&#x22;]).forEach(function (key) {
+    return postcss.use(_fixes2[&#x22;default&#x22;][key]);
+  });
+
+  // features
+  Object.keys(cssnext.features).forEach(function (key) {
+    // feature is auto enabled if: not disable &#x26;&#x26; (enabled || no data yet ||
+    // !supported yet)
+    if (
+    // feature is not disabled
+    features[key] !== false &#x26;&#x26; (
+    // feature is enabled
+    features[key] === true ||
+
+    // feature don&#x27;t have any browsers data (yet)
+    _featuresActivationMap2[&#x22;default&#x22;][key] === undefined ||
+
+    // feature is not yet supported by the browsers scope
+    _featuresActivationMap2[&#x22;default&#x22;][key] &#x26;&#x26; _featuresActivationMap2[&#x22;default&#x22;][key][0] &#x26;&#x26; !(0, _caniuseApi.isSupported)(_featuresActivationMap2
+[&#x22;default&#x22;][key][0], options.browsers))) {
+      var plugin = cssnext.features[key](typeof features[key] === &#x22;object&#x22; ? _extends({}, features[key]) : undefined);
+      postcss.use(plugin);
+    }
+  });
+
+  if (options.plugins) {
+    if (!Array.isArray(options.plugins)) {
+      throw new Error(&#x22;cssnext &#x27;plugins&#x27; option expect an array of PostCSS plugins. &#x22; + &#x22;You provided &#x22; + typeof options.plugins
+);
+    }
+
+    options.plugins.forEach(function (plugin) {
+      return postcss.use(plugin);
+    });
+  }
+
+  // minification
+  if (options.compress) {
+    postcss.use(require(&#x22;cssnano&#x22;)(typeof options.compress === &#x22;object&#x22; ? options.compress : {}));
+  }
+
+  // console plugins MUST be called after others because
+  // by default it remove messages from the registry
+  // (which make sense)
+  if (options.messages) {
+    (0, _optionMessages2[&#x22;default&#x22;])(options).forEach(function (plugin) {
+      postcss.use(plugin);
+    });
+  }
+
+  // classic API if string is passed
+  if (typeof string === &#x22;string&#x22;) {
+    var result = postcss.process(string, options);
+
+    // default behavior, cssnext returns a css string if no or inline sourcemap
+    if (options.map === null || (options.map ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.cssnext.features" id="apidoc.module.cssnext.features">module cssnext.features</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.cssnext.features.autoprefixer" id="apidoc.element.cssnext.features.autoprefixer">
+        function <span class="apidocSignatureSpan">cssnext.features.</span>autoprefixer
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function autoprefixer(options) {
+  return require(&#x22;autoprefixer-core&#x22;)(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cssnext.features.calc" id="apidoc.element.cssnext.features.calc">
+        function <span class="apidocSignatureSpan">cssnext.features.</span>calc
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function calc(options) {
+  return require(&#x22;postcss-calc&#x22;)(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cssnext.features.colorFunction" id="apidoc.element.cssnext.features.colorFunction">
+        function <span class="apidocSignatureSpan">cssnext.features.</span>colorFunction
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function colorFunction(options) {
+  return require(&#x22;postcss-color-function&#x22;)(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cssnext.features.colorGray" id="apidoc.element.cssnext.features.colorGray">
+        function <span class="apidocSignatureSpan">cssnext.features.</span>colorGray
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function colorGray(options) {
+  return require(&#x22;postcss-color-gray&#x22;)(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cssnext.features.colorHexAlpha" id="apidoc.element.cssnext.features.colorHexAlpha">
+        function <span class="apidocSignatureSpan">cssnext.features.</span>colorHexAlpha
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function colorHexAlpha(options) {
+  return require(&#x22;postcss-color-hex-alpha&#x22;)(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cssnext.features.colorHwb" id="apidoc.element.cssnext.features.colorHwb">
+        function <span class="apidocSignatureSpan">cssnext.features.</span>colorHwb
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function colorHwb(options) {
+  return require(&#x22;postcss-color-hwb&#x22;)(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cssnext.features.colorRebeccapurple" id="apidoc.element.cssnext.features.colorRebeccapurple">
+        function <span class="apidocSignatureSpan">cssnext.features.</span>colorRebeccapurple
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function colorRebeccapurple(options) {
+  return require(&#x22;postcss-color-rebeccapurple&#x22;)(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cssnext.features.colorRgba" id="apidoc.element.cssnext.features.colorRgba">
+        function <span class="apidocSignatureSpan">cssnext.features.</span>colorRgba
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function colorRgba(options) {
+  return require(&#x22;postcss-color-rgba-fallback&#x22;)(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cssnext.features.customMedia" id="apidoc.element.cssnext.features.customMedia">
+        function <span class="apidocSignatureSpan">cssnext.features.</span>customMedia
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function customMedia(options) {
+  return require(&#x22;postcss-custom-media&#x22;)(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cssnext.features.customProperties" id="apidoc.element.cssnext.features.customProperties">
+        function <span class="apidocSignatureSpan">cssnext.features.</span>customProperties
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function customProperties(options) {
+  return require(&#x22;postcss-custom-properties&#x22;)(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cssnext.features.customSelectors" id="apidoc.element.cssnext.features.customSelectors">
+        function <span class="apidocSignatureSpan">cssnext.features.</span>customSelectors
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function customSelectors(options) {
+  return require(&#x22;postcss-custom-selectors&#x22;)(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cssnext.features.filter" id="apidoc.element.cssnext.features.filter">
+        function <span class="apidocSignatureSpan">cssnext.features.</span>filter
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function filter(options) {
+  return require(&#x22;pleeease-filters&#x22;)(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cssnext.features.fontVariant" id="apidoc.element.cssnext.features.fontVariant">
+        function <span class="apidocSignatureSpan">cssnext.features.</span>fontVariant
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function fontVariant(options) {
+  return require(&#x22;postcss-font-variant&#x22;)(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cssnext.features.mediaQueriesRange" id="apidoc.element.cssnext.features.mediaQueriesRange">
+        function <span class="apidocSignatureSpan">cssnext.features.</span>mediaQueriesRange
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function mediaQueriesRange(options) {
+  return require(&#x22;postcss-media-minmax&#x22;)(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cssnext.features.pseudoClassAnyLink" id="apidoc.element.cssnext.features.pseudoClassAnyLink">
+        function <span class="apidocSignatureSpan">cssnext.features.</span>pseudoClassAnyLink
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function pseudoClassAnyLink(options) {
+  return require(&#x22;postcss-pseudo-class-any-link&#x22;)(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cssnext.features.pseudoClassMatches" id="apidoc.element.cssnext.features.pseudoClassMatches">
+        function <span class="apidocSignatureSpan">cssnext.features.</span>pseudoClassMatches
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function pseudoClassMatches(options) {
+  return require(&#x22;postcss-selector-matches&#x22;)(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cssnext.features.pseudoClassNot" id="apidoc.element.cssnext.features.pseudoClassNot">
+        function <span class="apidocSignatureSpan">cssnext.features.</span>pseudoClassNot
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function pseudoClassNot(options) {
+  return require(&#x22;postcss-selector-not&#x22;)(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cssnext.features.pseudoElements" id="apidoc.element.cssnext.features.pseudoElements">
+        function <span class="apidocSignatureSpan">cssnext.features.</span>pseudoElements
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function pseudoElements(options) {
+  return require(&#x22;postcss-pseudoelements&#x22;)(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cssnext.features.rem" id="apidoc.element.cssnext.features.rem">
+        function <span class="apidocSignatureSpan">cssnext.features.</span>rem
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function rem(options) {
+  return require(&#x22;pixrem&#x22;)(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
